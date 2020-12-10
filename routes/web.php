@@ -24,5 +24,9 @@ Route::get('/consume_api', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Status
 Route::post('/status_post', [App\Http\Controllers\StatusController::class, 'post_status']);
+Route::post('/status/update',[App\Http\Controllers\StatusController::class, 'status_update']);
+Route::get('/status/delete/{id}', [App\Http\Controllers\StatusController::class, 'status_delete']);
 
