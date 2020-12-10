@@ -64,7 +64,7 @@
                                             <div class="m-3">
                                             <h3><strong>Author: </strong> {{ $status->user->name }}</h3>
                                             <h4><strong>Quote:</strong>  {{ $status->status }}</h4>
-                                            <p><strong>Quote-Time:</strong> @php echo e(date('M d, Y', strtotime($status->created_at )))@endphp</p>
+                                            <p><strong>Quote-Time:</strong> @php echo e(date('M d, Y h:i A', strtotime($status->created_at )))@endphp</p>
                                             </div>
                                           
                                             <div class="modal-footer pb-4">
