@@ -10,7 +10,7 @@
 <div class="container">
 
        <div class="text-center" style="margin-top:330px;">
-            <h1>Welcome To Your Status Sharing Application</h1>
+            <h1>Welcome To Your Quote Sharing Application</h1>
 
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

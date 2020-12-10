@@ -6,12 +6,12 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">Share your status with everyone</div>
+                <div class="card-header"><h3>Share your quote with everyone</h3></div>
 
                 <div class="card-body">
                 <form action="{{url('/status_post')}}" method="post">
                 @csrf
-                <textarea name="post" rows="4" cols="106" placeholder="What's on your mind, {{ Auth::user()->name }}?"></textarea>
+                <textarea name="post" rows="4" cols="106" data-emoji="true" placeholder="What's on your mind, {{ Auth::user()->name }}?"></textarea>
                 <div class="row">
                 <div class="col-10">
                 </div>
